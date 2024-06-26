@@ -78,21 +78,22 @@ https://www.youtube.com/watch?v=8_X0nSrzrCw
 
 # Commands used
 
-nest new nest-rest-api
-npm run start:dev
-nest g module books
-nest g controller books
-nest g service books
-npm i @nestjs/mapped-types -D
-npm i class-validator class-transformer
-npm i prisma
-npx prisma init
-npx prisma migrate dev --name init
-npx prisma generate (to update schema)
-nest g module database
-nest g service database
+- nest new nest-rest-api
+- npm run start:dev
+- nest g module books
+- nest g controller books
+- nest g service books
+- npm i @nestjs/mapped-types -D
+- npm i class-validator class-transformer
+- npm i prisma
+- npx prisma init
+- npx prisma migrate dev --name init
+- npx prisma generate (to update schema)
+- nest g module database
+- nest g service database
 
 # Database
 
-I'm using a serverless postgres database hosted by Neon (https://neon.tech).
-Prisma is not able to find DATABASE_URL in .env file. Before starting the application, set the variable manually: $Env:DATABASE_URL="postgresql://books_owner:52WXneMYhgKy@ep-delicate-morning-a5tddjen-pooler.us-east-2.aws.neon.tech/books?sslmode=require"
+- I'm using a serverless postgres database hosted by Neon (https://neon.tech).
+- Prisma is not able to find DATABASE_URL in .env file. Before starting the application, set the variable manually:
+- $Env:DATABASE_URL="postgresql://books_owner:52WXneMYhgKy@ep-delicate-morning-a5tddjen-pooler.us-east-2.aws.neon.tech/books?sslmode=require"
