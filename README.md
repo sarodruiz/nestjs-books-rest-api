@@ -91,6 +91,7 @@ https://www.youtube.com/watch?v=8_X0nSrzrCw
 - npx prisma generate (to update schema)
 - nest g module database
 - nest g service database
+- npm i @nestjs/throttler
 
 # Database
 
